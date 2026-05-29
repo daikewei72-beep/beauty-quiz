@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣美女調查</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", Arial, sans-serif; background-color: #fce4ec; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; max-width: 400px; width: 100%; border-top: 8px solid #e91e63; }
+        h2 { color: #e91e63; margin-bottom: 10px; }
+        select { width: 100%; padding: 12px; margin: 20px 0; border: 2px solid #f8bbd0; border-radius: 6px; font-size: 16px; color: #333; background-color: #fff; }
+        select:focus { outline: none; border-color: #e91e63; }
+        button { background-color: #e91e63; color: white; border: none; padding: 12px 20px; font-size: 16px; border-radius: 6px; cursor: pointer; width: 100%; font-weight: bold; transition: background 0.3s; }
+        button:hover { background-color: #c2185b; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>📢 人氣票選調查</h2>
+    <p>請選出你心中臺灣最美的女子：</p>
+    
+    <form action="https://docs.google.com/forms/d/e/換成你的個人表單ID/formResponse" method="POST">
+        
+        <select name="entry.123456789" required>
+            <option value="" disabled selected>-- 請選擇 --</option>
+            <option value="欣吾老師">欣吾老師</option>
+            <option value="Delia">Delia</option>
+            <option value="蔡欣吾">蔡欣吾</option>
+            <option value="艾樺的姐姐">艾樺的姐姐</option>
+        </select>
+        
+        <button type="submit">送出神聖的一票</button>
+    </form>
+</div>
+
+</body>
+</html>
